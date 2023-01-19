@@ -19,8 +19,8 @@
 
     <main>
 
-        <div class="container-fluid">
-            <h1 class="text-center">DC Comics Archive</h1>
+        <div class="container-fluid text-center">
+            <h1 class="my-2">DC Comics Archive</h1>
 
             <table class="table">
                 <thead>
@@ -52,6 +52,8 @@
                     @endforeach
                 </tbody>
               </table>
+
+              <a class="btn btn-success my-2" href="{{ route("comics.create") }}">Aggiungi un fumetto!</a>
         </div>
 
     </main>
