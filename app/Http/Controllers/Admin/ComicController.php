@@ -86,11 +86,12 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
+        // recupero tutti i dati del form
         $data = $request->all();
-
+        // aggiorno la risorsa per intero
         $comic->update($data);
-
-        return redirect("comics.show", $comic->id);
+        // faccio un redirect alla pagina index
+        return redirect()->route('comics.index');
     }
 
     /**

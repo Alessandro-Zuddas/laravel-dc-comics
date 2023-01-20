@@ -24,6 +24,7 @@
             <h1>Modifica: {{ $comic->title }}</h1>
 
             <form  action="{{ route('comics.update', $comic) }}" method="POST">
+
                 @csrf
                 @method("PUT");
 
