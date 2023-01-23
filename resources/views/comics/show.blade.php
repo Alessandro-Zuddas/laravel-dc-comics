@@ -22,8 +22,8 @@
         <div class="container-fluid">
 
             <h1 class="text-center">{{ $comic->title }}</h1>
+            <img src="{{ $comic->thumb }}" alt="Comic Image">
             <div>{{ $comic->description }}</div>
-            <div>{{ $comic->thumb }}</div>
             <div>{{ $comic->price }}</div>
             <div>{{ $comic->series }}</div>
             <div>{{ $comic->sale_date }}</div>
