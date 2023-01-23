@@ -24,7 +24,9 @@
             <h1 class="text-center">{{ $comic->title }}</h1>
             <img src="{{ $comic->thumb }}" alt="Comic Image">
             <div>{{ $comic->description }}</div>
-            <div>{{ $comic->price }}</div>
+            <div>
+                <strong>Prezzo: </strong>{{ $comic->price }}
+            </div>
             <div>{{ $comic->series }}</div>
             <div>{{ $comic->sale_date }}</div>
             <div>{{ $comic->type }}</div>
